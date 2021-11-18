@@ -19,7 +19,7 @@ function Breaking(){
         <div className="container">
             {
             items.map((item) => {
-                const {name, birthday, occupation, img, status, nickname, appearance, portrayed, category} = item;
+                const {name, birthday, occupation, img, status, nickname, appearance} = item;
                 return(
                     <div className = "cards">
 
@@ -53,7 +53,7 @@ function Breaking(){
                     </div>
             
                     <div className = "status">
-                        <h2>{status}</h2>
+                        {status === "Alive" ? <h2 className = "alive">{status}</h2> : <h2 className = "dead">{status}</h2>}
                     </div>
                     </div>
                    </div>

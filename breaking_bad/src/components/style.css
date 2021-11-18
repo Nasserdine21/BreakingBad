@@ -53,3 +53,9 @@ body{
     border: 1px solid black;
     border-radius: 6px;
 }
+.alive{
+    color: green;
+}
+.dead{
+    color: red;
+}
